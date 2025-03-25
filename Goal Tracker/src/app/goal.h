@@ -2,7 +2,7 @@
 #define GOAL_H
 #include <string>
 
-Class Goal
+class Goal
 {
 private:
 	int id;
@@ -10,13 +10,24 @@ private:
 	std::string category;
 	double targetValue;
 	double currentProgress;
-	std::string deadline;
+	string deadline;
 
 public:
-	Goal(int id, std::string name, std::string category, double targetValue, double currentProgress, std::sting deadline);
+	Goal(int id, std::string name, std::string category, double targetValue, double currentProgress, std::string deadline);
 
 	int getId() const;
-	string getName() const;
-	string getCategory() const;
+	std::string getName() const;
+	std::string getCategory() const;
+	double getTargetValue() const;
+	double getCurrentProgress() const;
+	std::string getDeadline() const;
+
+	void addProgress(double amount);
+
+	double getProgressPercent() const;
+
+	void displayGoal() const;
 	
-}
+};
+
+#endif
