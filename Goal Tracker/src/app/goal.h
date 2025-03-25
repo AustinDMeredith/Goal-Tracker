@@ -10,7 +10,7 @@ private:
 	std::string category;
 	double targetValue;
 	double currentProgress;
-	string deadline;
+	std::string deadline;
 
 public:
 	Goal(int id, std::string name, std::string category, double targetValue, double currentProgress, std::string deadline);
