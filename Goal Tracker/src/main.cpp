@@ -1,5 +1,5 @@
-#include <iostream>
 #include "goal.h"
+#include <iostream>
 using namespace std;
 
 int main()
