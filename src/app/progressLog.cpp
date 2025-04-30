@@ -25,5 +25,7 @@ double ProgressLog::getProgressMade() const {
 }
 
 void ProgressLog::displayProgress() const {
-	cout << "Activity Name ";
+	cout << "Activity Name: " << logName << endl;
+	cout << "Date: " << date << endl;	
+	cout << "Progress Made: " << progressMade << "%" << endl;
 }
