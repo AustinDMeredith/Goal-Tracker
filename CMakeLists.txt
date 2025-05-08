@@ -3,7 +3,7 @@ Project(Goal-Tracker)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_executable(GoalTracker 
-    src/main.cpp 
+    src/core/main.cpp 
     src/app/goal.cpp
     src/app/progressLog.cpp
 )
