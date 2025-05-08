@@ -27,7 +27,6 @@ public:
 	double getProgressPercent() const;
 
 	void displayGoal() const;
-	
 };
 
 #endif
