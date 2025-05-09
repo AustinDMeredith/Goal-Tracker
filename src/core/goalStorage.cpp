@@ -3,12 +3,12 @@
 using namespace std;
 
 // Add a goal to the storage
-void GoalStorage::addGoal(const std::string& id, const Goal& goal){
+void GoalStorage::addGoal(const std::string& id, const Goal& goal) {
     goals[id] = goal;
 } 
 
 // Update a goal in the storage
-void GoalStorage::updateGoal(const std::string& id, const Goal& updatedGoal){
+void GoalStorage::updateGoal(const std::string& id, const Goal& updatedGoal) {
     auto result = goals.find(id);
     if(result != goals.end()) {
         result->second = updatedGoal;
@@ -19,7 +19,7 @@ void GoalStorage::updateGoal(const std::string& id, const Goal& updatedGoal){
 }
 
 // Remove a goal from the storage
-void GoalStorage::removeGoal(const std::string& id){
+void GoalStorage::removeGoal(const std::string& id) {
     auto result = goals.find(id);
     if(result != goals.end()) {
         goals.erase(result);
@@ -29,7 +29,7 @@ void GoalStorage::removeGoal(const std::string& id){
 }
 
 // Find a goal by its ID
-Goal* GoalStorage::findGoal(const std::string& id){
+Goal* GoalStorage::findGoal(const std::string& id) {
     auto result = goals.find(id);
     if(result != goals.end()) {
         return &result->second;

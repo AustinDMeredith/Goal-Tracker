@@ -159,53 +159,53 @@ src/app/goal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/goal.cpp.s
 .PHONY : src/app/goal.cpp.s
 
-src/app/progressLog.obj: src/app/progressLog.cpp.obj
-.PHONY : src/app/progressLog.obj
+src/core/goalStorage.obj: src/core/goalStorage.cpp.obj
+.PHONY : src/core/goalStorage.obj
 
 # target to build an object file
-src/app/progressLog.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj
-.PHONY : src/app/progressLog.cpp.obj
+src/core/goalStorage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.obj
+.PHONY : src/core/goalStorage.cpp.obj
 
-src/app/progressLog.i: src/app/progressLog.cpp.i
-.PHONY : src/app/progressLog.i
+src/core/goalStorage.i: src/core/goalStorage.cpp.i
+.PHONY : src/core/goalStorage.i
 
 # target to preprocess a source file
-src/app/progressLog.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.i
-.PHONY : src/app/progressLog.cpp.i
+src/core/goalStorage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.i
+.PHONY : src/core/goalStorage.cpp.i
 
-src/app/progressLog.s: src/app/progressLog.cpp.s
-.PHONY : src/app/progressLog.s
+src/core/goalStorage.s: src/core/goalStorage.cpp.s
+.PHONY : src/core/goalStorage.s
 
 # target to generate assembly for a file
-src/app/progressLog.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.s
-.PHONY : src/app/progressLog.cpp.s
+src/core/goalStorage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.s
+.PHONY : src/core/goalStorage.cpp.s
 
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
+src/core/main.obj: src/core/main.cpp.obj
+.PHONY : src/core/main.obj
 
 # target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
+src/core/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/main.cpp.obj
+.PHONY : src/core/main.cpp.obj
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/core/main.i: src/core/main.cpp.i
+.PHONY : src/core/main.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/core/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/main.cpp.i
+.PHONY : src/core/main.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/core/main.s: src/core/main.cpp.s
+.PHONY : src/core/main.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/core/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/main.cpp.s
+.PHONY : src/core/main.cpp.s
 
 # Help Target
 help:
@@ -220,12 +220,12 @@ help:
 	@echo ... src/app/goal.obj
 	@echo ... src/app/goal.i
 	@echo ... src/app/goal.s
-	@echo ... src/app/progressLog.obj
-	@echo ... src/app/progressLog.i
-	@echo ... src/app/progressLog.s
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
+	@echo ... src/core/goalStorage.obj
+	@echo ... src/core/goalStorage.i
+	@echo ... src/core/goalStorage.s
+	@echo ... src/core/main.obj
+	@echo ... src/core/main.i
+	@echo ... src/core/main.s
 .PHONY : help
 
 

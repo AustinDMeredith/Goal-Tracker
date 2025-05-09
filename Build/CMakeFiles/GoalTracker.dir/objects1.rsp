@@ -1,1 +1,1 @@
-CMakeFiles/GoalTracker.dir/src/main.cpp.obj CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj
+CMakeFiles/GoalTracker.dir/src/core/main.cpp.obj CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.obj CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj
