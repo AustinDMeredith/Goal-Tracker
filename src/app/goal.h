@@ -2,8 +2,7 @@
 #define GOAL_H
 #include <string>
 
-class Goal
-{
+class Goal {
 private:
 	int id;
 	std::string name;

@@ -2,8 +2,7 @@
 #define PROGRESSLOG_H
 #include <string>
 
-class ProgressLog
-{
+class ProgressLog {
 private:
     int id;
     int goalId;

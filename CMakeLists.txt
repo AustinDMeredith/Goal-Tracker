@@ -5,6 +5,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_executable(GoalTracker 
     src/core/main.cpp 
     src/core/goalStorage.cpp
+    src/core/progStorage.cpp
     src/app/goal.cpp
+    src/app/progressLog.cpp
 )
-include_directories(src/app)
+include_directories(src/app
+    src/core
+)

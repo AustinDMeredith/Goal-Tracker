@@ -101,11 +101,26 @@ CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding Projects\Goal-Tracker\src\core\goalStorage.cpp" -o CMakeFiles\GoalTracker.dir\src\core\goalStorage.cpp.s
 
+CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.obj: CMakeFiles/GoalTracker.dir/flags.make
+CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.obj: CMakeFiles/GoalTracker.dir/includes_CXX.rsp
+CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.obj: C:/Coding\ Projects/Goal-Tracker/src/core/progStorage.cpp
+CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.obj: CMakeFiles/GoalTracker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Coding Projects\Goal-Tracker\Build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.obj -MF CMakeFiles\GoalTracker.dir\src\core\progStorage.cpp.obj.d -o CMakeFiles\GoalTracker.dir\src\core\progStorage.cpp.obj -c "C:\Coding Projects\Goal-Tracker\src\core\progStorage.cpp"
+
+CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding Projects\Goal-Tracker\src\core\progStorage.cpp" > CMakeFiles\GoalTracker.dir\src\core\progStorage.cpp.i
+
+CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding Projects\Goal-Tracker\src\core\progStorage.cpp" -o CMakeFiles\GoalTracker.dir\src\core\progStorage.cpp.s
+
 CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj: CMakeFiles/GoalTracker.dir/flags.make
 CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj: CMakeFiles/GoalTracker.dir/includes_CXX.rsp
 CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj: C:/Coding\ Projects/Goal-Tracker/src/app/goal.cpp
 CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj: CMakeFiles/GoalTracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Coding Projects\Goal-Tracker\Build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Coding Projects\Goal-Tracker\Build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj -MF CMakeFiles\GoalTracker.dir\src\app\goal.cpp.obj.d -o CMakeFiles\GoalTracker.dir\src\app\goal.cpp.obj -c "C:\Coding Projects\Goal-Tracker\src\app\goal.cpp"
 
 CMakeFiles/GoalTracker.dir/src/app/goal.cpp.i: cmake_force
@@ -116,23 +131,42 @@ CMakeFiles/GoalTracker.dir/src/app/goal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GoalTracker.dir/src/app/goal.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding Projects\Goal-Tracker\src\app\goal.cpp" -o CMakeFiles\GoalTracker.dir\src\app\goal.cpp.s
 
+CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj: CMakeFiles/GoalTracker.dir/flags.make
+CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj: CMakeFiles/GoalTracker.dir/includes_CXX.rsp
+CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj: C:/Coding\ Projects/Goal-Tracker/src/app/progressLog.cpp
+CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj: CMakeFiles/GoalTracker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Coding Projects\Goal-Tracker\Build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj -MF CMakeFiles\GoalTracker.dir\src\app\progressLog.cpp.obj.d -o CMakeFiles\GoalTracker.dir\src\app\progressLog.cpp.obj -c "C:\Coding Projects\Goal-Tracker\src\app\progressLog.cpp"
+
+CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding Projects\Goal-Tracker\src\app\progressLog.cpp" > CMakeFiles\GoalTracker.dir\src\app\progressLog.cpp.i
+
+CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding Projects\Goal-Tracker\src\app\progressLog.cpp" -o CMakeFiles\GoalTracker.dir\src\app\progressLog.cpp.s
+
 # Object files for target GoalTracker
 GoalTracker_OBJECTS = \
 "CMakeFiles/GoalTracker.dir/src/core/main.cpp.obj" \
 "CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.obj" \
-"CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj"
+"CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.obj" \
+"CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj" \
+"CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj"
 
 # External object files for target GoalTracker
 GoalTracker_EXTERNAL_OBJECTS =
 
 GoalTracker.exe: CMakeFiles/GoalTracker.dir/src/core/main.cpp.obj
 GoalTracker.exe: CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.obj
+GoalTracker.exe: CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.obj
 GoalTracker.exe: CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj
+GoalTracker.exe: CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj
 GoalTracker.exe: CMakeFiles/GoalTracker.dir/build.make
 GoalTracker.exe: CMakeFiles/GoalTracker.dir/linkLibs.rsp
 GoalTracker.exe: CMakeFiles/GoalTracker.dir/objects1.rsp
 GoalTracker.exe: CMakeFiles/GoalTracker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Coding Projects\Goal-Tracker\Build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable GoalTracker.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Coding Projects\Goal-Tracker\Build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable GoalTracker.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GoalTracker.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

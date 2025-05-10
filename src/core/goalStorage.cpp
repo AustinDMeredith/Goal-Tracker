@@ -1,10 +1,12 @@
 #include "goalStorage.h"
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 // Add a goal to the storage
 void GoalStorage::addGoal(const std::string& id, const Goal& goal) {
-    goals[id] = goal;
+    goals.emplace(id, goal);
+    cout << "Goal successfully added." << endl;
 } 
 
 // Update a goal in the storage
@@ -12,7 +14,7 @@ void GoalStorage::updateGoal(const std::string& id, const Goal& updatedGoal) {
     auto result = goals.find(id);
     if(result != goals.end()) {
         result->second = updatedGoal;
-        cout << "Success" << endl;
+        cout << "Goal successfully updated." << endl;
     } else {
         cout << "No goal with ID " << id << " found.";
     }
@@ -23,9 +25,14 @@ void GoalStorage::removeGoal(const std::string& id) {
     auto result = goals.find(id);
     if(result != goals.end()) {
         goals.erase(result);
+        cout << "Goal successfully deleted." << endl;
     } else {
         cout << "No goal with ID " << id << " found.";
     }
+}
+
+void writeToFile() {
+
 }
 
 // Find a goal by its ID
