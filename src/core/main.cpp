@@ -7,6 +7,7 @@ using namespace std;
 
 int main()
 {
+    system("cls");
     GoalStorage goalStorage;
     ProgStorage progStorage;
     
@@ -19,6 +20,7 @@ int main()
     progStorage.addLog("got the log stoage working", progress);
     goal.addProgress(3);
     goalStorage.updateGoal("finish Goal Tracker project", goal);
+    cout << endl;
     progress.displayProgress();
     cout << endl;
     goal.displayGoal();
