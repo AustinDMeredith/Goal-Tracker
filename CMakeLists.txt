@@ -8,6 +8,7 @@ add_executable(GoalTracker
     src/core/progStorage.cpp
     src/app/goal.cpp
     src/app/progressLog.cpp
+    src/app/cli.cpp
 )
 include_directories(src/app
     src/core

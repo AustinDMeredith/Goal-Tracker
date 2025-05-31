@@ -135,6 +135,30 @@ GoalTracker/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/build
 .PHONY : GoalTracker/fast
 
+src/app/cli.obj: src/app/cli.cpp.obj
+.PHONY : src/app/cli.obj
+
+# target to build an object file
+src/app/cli.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/cli.cpp.obj
+.PHONY : src/app/cli.cpp.obj
+
+src/app/cli.i: src/app/cli.cpp.i
+.PHONY : src/app/cli.i
+
+# target to preprocess a source file
+src/app/cli.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/cli.cpp.i
+.PHONY : src/app/cli.cpp.i
+
+src/app/cli.s: src/app/cli.cpp.s
+.PHONY : src/app/cli.s
+
+# target to generate assembly for a file
+src/app/cli.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/cli.cpp.s
+.PHONY : src/app/cli.cpp.s
+
 src/app/goal.obj: src/app/goal.cpp.obj
 .PHONY : src/app/goal.obj
 
@@ -265,6 +289,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GoalTracker
+	@echo ... src/app/cli.obj
+	@echo ... src/app/cli.i
+	@echo ... src/app/cli.s
 	@echo ... src/app/goal.obj
 	@echo ... src/app/goal.i
 	@echo ... src/app/goal.s

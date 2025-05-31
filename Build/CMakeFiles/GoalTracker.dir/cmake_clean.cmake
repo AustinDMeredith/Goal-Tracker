@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/GoalTracker.dir/src/app/cli.cpp.obj"
+  "CMakeFiles/GoalTracker.dir/src/app/cli.cpp.obj.d"
   "CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj"
   "CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj.d"
   "CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj"

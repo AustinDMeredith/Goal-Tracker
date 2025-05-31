@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Coding Projects/Goal-Tracker/src/app/cli.cpp" "CMakeFiles/GoalTracker.dir/src/app/cli.cpp.obj" "gcc" "CMakeFiles/GoalTracker.dir/src/app/cli.cpp.obj.d"
   "C:/Coding Projects/Goal-Tracker/src/app/goal.cpp" "CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj" "gcc" "CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj.d"
   "C:/Coding Projects/Goal-Tracker/src/app/progressLog.cpp" "CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj" "gcc" "CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj.d"
   "C:/Coding Projects/Goal-Tracker/src/core/goalStorage.cpp" "CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.obj" "gcc" "CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.obj.d"

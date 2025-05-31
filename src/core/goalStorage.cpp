@@ -31,8 +31,8 @@ void GoalStorage::removeGoal(const std::string& id) {
     }
 }
 
-void writeToFile() {
-
+const std::map<std::string, Goal>& GoalStorage::getGoals() const {
+    return goals;
 }
 
 // Find a goal by its ID
