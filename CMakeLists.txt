@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 4.0)
-Project(Goal-Tracker)
+Project(Osmium)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
-add_executable(GoalTracker 
+add_executable(Osmium 
     src/core/main.cpp 
     src/core/goalStorage.cpp
     src/core/progStorage.cpp

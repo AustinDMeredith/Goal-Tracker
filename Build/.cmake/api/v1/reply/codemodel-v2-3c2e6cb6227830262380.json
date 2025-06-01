@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "Goal-Tracker",
+					"name" : "Osmium",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "GoalTracker::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-GoalTracker-Debug-2abcd4dedb840c0b49c7.json",
-					"name" : "GoalTracker",
+					"id" : "Osmium::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Osmium-Debug-9effcb71f6318caf2c8a.json",
+					"name" : "Osmium",
 					"projectIndex" : 0
 				}
 			]

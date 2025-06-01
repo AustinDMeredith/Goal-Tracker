@@ -3,9 +3,11 @@
 #include "goalStorage.h"
 
 void save(const GoalStorage& goalStorage);
-// void printMenu();
-// void printHelp();
-// void printVersion();
+void printMenu();
+void printHelp();
+void printVersion();
+void startUp();
+void shutDown();
 // function to handle the command line arguments
 // function to handle creating a goal
 // function to handle deleting a goal

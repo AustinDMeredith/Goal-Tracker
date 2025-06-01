@@ -79,7 +79,7 @@ CMakeFiles/GoalTracker.dir/src/core/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\functional_hash.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hash_bytes.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc \
- c:\mingw\include\process.h \
+ C:/CODING~1/GOAL-T~1/src/app/progressLog.h \
  C:\Coding\ Projects\Goal-Tracker\src\core\goalStorage.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\map \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_tree.h \
@@ -93,7 +93,6 @@ CMakeFiles/GoalTracker.dir/src/core/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uses_allocator.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_multimap.h \
  C:\Coding\ Projects\Goal-Tracker\src\core\progStorage.h \
- C:/CODING~1/GOAL-T~1/src/app/progressLog.h \
  C:/CODING~1/GOAL-T~1/src/app/cli.h \
  C:/CODING~1/GOAL-T~1/src/core/goalStorage.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \

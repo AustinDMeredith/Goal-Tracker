@@ -1,38 +1,38 @@
 [
 {
   "directory": "C:/Coding Projects/Goal-Tracker/Build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/GoalTracker.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\GoalTracker.dir\\src\\core\\main.cpp.obj -c \"C:\\Coding Projects\\Goal-Tracker\\src\\core\\main.cpp\"",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/Osmium.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\Osmium.dir\\src\\core\\main.cpp.obj -c \"C:\\Coding Projects\\Goal-Tracker\\src\\core\\main.cpp\"",
   "file": "C:/Coding Projects/Goal-Tracker/src/core/main.cpp",
-  "output": "CMakeFiles/GoalTracker.dir/src/core/main.cpp.obj"
+  "output": "CMakeFiles/Osmium.dir/src/core/main.cpp.obj"
 },
 {
   "directory": "C:/Coding Projects/Goal-Tracker/Build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/GoalTracker.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\GoalTracker.dir\\src\\core\\goalStorage.cpp.obj -c \"C:\\Coding Projects\\Goal-Tracker\\src\\core\\goalStorage.cpp\"",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/Osmium.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\Osmium.dir\\src\\core\\goalStorage.cpp.obj -c \"C:\\Coding Projects\\Goal-Tracker\\src\\core\\goalStorage.cpp\"",
   "file": "C:/Coding Projects/Goal-Tracker/src/core/goalStorage.cpp",
-  "output": "CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.obj"
+  "output": "CMakeFiles/Osmium.dir/src/core/goalStorage.cpp.obj"
 },
 {
   "directory": "C:/Coding Projects/Goal-Tracker/Build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/GoalTracker.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\GoalTracker.dir\\src\\core\\progStorage.cpp.obj -c \"C:\\Coding Projects\\Goal-Tracker\\src\\core\\progStorage.cpp\"",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/Osmium.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\Osmium.dir\\src\\core\\progStorage.cpp.obj -c \"C:\\Coding Projects\\Goal-Tracker\\src\\core\\progStorage.cpp\"",
   "file": "C:/Coding Projects/Goal-Tracker/src/core/progStorage.cpp",
-  "output": "CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.obj"
+  "output": "CMakeFiles/Osmium.dir/src/core/progStorage.cpp.obj"
 },
 {
   "directory": "C:/Coding Projects/Goal-Tracker/Build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/GoalTracker.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\GoalTracker.dir\\src\\app\\goal.cpp.obj -c \"C:\\Coding Projects\\Goal-Tracker\\src\\app\\goal.cpp\"",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/Osmium.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\Osmium.dir\\src\\app\\goal.cpp.obj -c \"C:\\Coding Projects\\Goal-Tracker\\src\\app\\goal.cpp\"",
   "file": "C:/Coding Projects/Goal-Tracker/src/app/goal.cpp",
-  "output": "CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj"
+  "output": "CMakeFiles/Osmium.dir/src/app/goal.cpp.obj"
 },
 {
   "directory": "C:/Coding Projects/Goal-Tracker/Build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/GoalTracker.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\GoalTracker.dir\\src\\app\\progressLog.cpp.obj -c \"C:\\Coding Projects\\Goal-Tracker\\src\\app\\progressLog.cpp\"",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/Osmium.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\Osmium.dir\\src\\app\\progressLog.cpp.obj -c \"C:\\Coding Projects\\Goal-Tracker\\src\\app\\progressLog.cpp\"",
   "file": "C:/Coding Projects/Goal-Tracker/src/app/progressLog.cpp",
-  "output": "CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj"
+  "output": "CMakeFiles/Osmium.dir/src/app/progressLog.cpp.obj"
 },
 {
   "directory": "C:/Coding Projects/Goal-Tracker/Build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/GoalTracker.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\GoalTracker.dir\\src\\app\\cli.cpp.obj -c \"C:\\Coding Projects\\Goal-Tracker\\src\\app\\cli.cpp\"",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/Osmium.dir/includes_CXX.rsp -g -std=gnu++1z -o CMakeFiles\\Osmium.dir\\src\\app\\cli.cpp.obj -c \"C:\\Coding Projects\\Goal-Tracker\\src\\app\\cli.cpp\"",
   "file": "C:/Coding Projects/Goal-Tracker/src/app/cli.cpp",
-  "output": "CMakeFiles/GoalTracker.dir/src/app/cli.cpp.obj"
+  "output": "CMakeFiles/Osmium.dir/src/app/cli.cpp.obj"
 }
 ]

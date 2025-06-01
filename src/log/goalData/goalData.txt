@@ -1,1 +1,2 @@
-finish Goal Tracker project|1|finish Goal Tracker project|School|100|0|2025-6-01
+finish Goal Tracker project|finish Goal Tracker project|Side Projects|100|0|2025-6-01
+Name|Name|Category|100|0|2025-6-01

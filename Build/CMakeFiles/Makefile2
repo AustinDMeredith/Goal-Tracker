@@ -62,11 +62,11 @@ CMAKE_BINARY_DIR = "C:\Coding Projects\Goal-Tracker\Build"
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/GoalTracker.dir/all
+all: CMakeFiles/Osmium.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/GoalTracker.dir/codegen
+codegen: CMakeFiles/Osmium.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -74,40 +74,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/GoalTracker.dir/clean
+clean: CMakeFiles/Osmium.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/GoalTracker.dir
+# Target rules for target CMakeFiles/Osmium.dir
 
 # All Build rule for target.
-CMakeFiles/GoalTracker.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Coding Projects\Goal-Tracker\Build\CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target GoalTracker"
-.PHONY : CMakeFiles/GoalTracker.dir/all
+CMakeFiles/Osmium.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Coding Projects\Goal-Tracker\Build\CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target Osmium"
+.PHONY : CMakeFiles/Osmium.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/GoalTracker.dir/rule: cmake_check_build_system
+CMakeFiles/Osmium.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Coding Projects\Goal-Tracker\Build\CMakeFiles" 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/GoalTracker.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Osmium.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Coding Projects\Goal-Tracker\Build\CMakeFiles" 0
-.PHONY : CMakeFiles/GoalTracker.dir/rule
+.PHONY : CMakeFiles/Osmium.dir/rule
 
 # Convenience name for target.
-GoalTracker: CMakeFiles/GoalTracker.dir/rule
-.PHONY : GoalTracker
+Osmium: CMakeFiles/Osmium.dir/rule
+.PHONY : Osmium
 
 # codegen rule for target.
-CMakeFiles/GoalTracker.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Coding Projects\Goal-Tracker\Build\CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Finished codegen for target GoalTracker"
-.PHONY : CMakeFiles/GoalTracker.dir/codegen
+CMakeFiles/Osmium.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Coding Projects\Goal-Tracker\Build\CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Finished codegen for target Osmium"
+.PHONY : CMakeFiles/Osmium.dir/codegen
 
 # clean rule for target.
-CMakeFiles/GoalTracker.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/clean
-.PHONY : CMakeFiles/GoalTracker.dir/clean
+CMakeFiles/Osmium.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/clean
+.PHONY : CMakeFiles/Osmium.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

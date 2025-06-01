@@ -2,11 +2,7 @@
 #include <iostream>
 using namespace std;
 
-Goal::Goal(int id, string name, string category, double targetValue, double currentProgress, string deadline) : id(id), name(name), category(category), targetValue(targetValue), currentProgress(currentProgress), deadline(deadline) {}
-
-int Goal::getId() const {
-    return id;
-}
+Goal::Goal(string name, string category, double targetValue, double currentProgress, string deadline) : name(name), category(category), targetValue(targetValue), currentProgress(currentProgress), deadline(deadline) {}
 
 string Goal::getName() const {
     return name;
@@ -40,8 +36,7 @@ double Goal::getProgressPercent() const {
 }
 
 void Goal::displayGoal() const {
-    cout << "Goal ID: " << id << "\n"
-              << "Name: " << name << "\n"
+    cout << "Name: " << name << "\n"
               << "Category: " << category << "\n"
               << "Target: " << targetValue << "\n"
               << "Current: " << currentProgress << "\n"

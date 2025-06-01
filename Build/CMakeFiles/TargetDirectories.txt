@@ -1,3 +1,3 @@
-C:/Coding Projects/Goal-Tracker/Build/CMakeFiles/GoalTracker.dir
+C:/Coding Projects/Goal-Tracker/Build/CMakeFiles/Osmium.dir
 C:/Coding Projects/Goal-Tracker/Build/CMakeFiles/edit_cache.dir
 C:/Coding Projects/Goal-Tracker/Build/CMakeFiles/rebuild_cache.dir

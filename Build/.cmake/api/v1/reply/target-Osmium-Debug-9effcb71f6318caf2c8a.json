@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "GoalTracker.exe"
+			"path" : "Osmium.exe"
 		},
 		{
-			"path" : "GoalTracker.pdb"
+			"path" : "Osmium.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -79,7 +79,7 @@
 			]
 		}
 	],
-	"id" : "GoalTracker::@6890427a1f51a3e7e1df",
+	"id" : "Osmium::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -95,8 +95,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "GoalTracker",
-	"nameOnDisk" : "GoalTracker.exe",
+	"name" : "Osmium",
+	"nameOnDisk" : "Osmium.exe",
 	"paths" : 
 	{
 		"build" : ".",

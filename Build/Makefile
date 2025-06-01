@@ -123,24 +123,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named GoalTracker
+# Target rules for targets named Osmium
 
 # Build rule for target.
-GoalTracker: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 GoalTracker
-.PHONY : GoalTracker
+Osmium: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Osmium
+.PHONY : Osmium
 
 # fast build rule for target.
-GoalTracker/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/build
-.PHONY : GoalTracker/fast
+Osmium/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/build
+.PHONY : Osmium/fast
 
 src/app/cli.obj: src/app/cli.cpp.obj
 .PHONY : src/app/cli.obj
 
 # target to build an object file
 src/app/cli.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/cli.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/app/cli.cpp.obj
 .PHONY : src/app/cli.cpp.obj
 
 src/app/cli.i: src/app/cli.cpp.i
@@ -148,7 +148,7 @@ src/app/cli.i: src/app/cli.cpp.i
 
 # target to preprocess a source file
 src/app/cli.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/cli.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/app/cli.cpp.i
 .PHONY : src/app/cli.cpp.i
 
 src/app/cli.s: src/app/cli.cpp.s
@@ -156,7 +156,7 @@ src/app/cli.s: src/app/cli.cpp.s
 
 # target to generate assembly for a file
 src/app/cli.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/cli.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/app/cli.cpp.s
 .PHONY : src/app/cli.cpp.s
 
 src/app/goal.obj: src/app/goal.cpp.obj
@@ -164,7 +164,7 @@ src/app/goal.obj: src/app/goal.cpp.obj
 
 # target to build an object file
 src/app/goal.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/goal.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/app/goal.cpp.obj
 .PHONY : src/app/goal.cpp.obj
 
 src/app/goal.i: src/app/goal.cpp.i
@@ -172,7 +172,7 @@ src/app/goal.i: src/app/goal.cpp.i
 
 # target to preprocess a source file
 src/app/goal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/goal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/app/goal.cpp.i
 .PHONY : src/app/goal.cpp.i
 
 src/app/goal.s: src/app/goal.cpp.s
@@ -180,7 +180,7 @@ src/app/goal.s: src/app/goal.cpp.s
 
 # target to generate assembly for a file
 src/app/goal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/goal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/app/goal.cpp.s
 .PHONY : src/app/goal.cpp.s
 
 src/app/progressLog.obj: src/app/progressLog.cpp.obj
@@ -188,7 +188,7 @@ src/app/progressLog.obj: src/app/progressLog.cpp.obj
 
 # target to build an object file
 src/app/progressLog.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/app/progressLog.cpp.obj
 .PHONY : src/app/progressLog.cpp.obj
 
 src/app/progressLog.i: src/app/progressLog.cpp.i
@@ -196,7 +196,7 @@ src/app/progressLog.i: src/app/progressLog.cpp.i
 
 # target to preprocess a source file
 src/app/progressLog.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/app/progressLog.cpp.i
 .PHONY : src/app/progressLog.cpp.i
 
 src/app/progressLog.s: src/app/progressLog.cpp.s
@@ -204,7 +204,7 @@ src/app/progressLog.s: src/app/progressLog.cpp.s
 
 # target to generate assembly for a file
 src/app/progressLog.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/app/progressLog.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/app/progressLog.cpp.s
 .PHONY : src/app/progressLog.cpp.s
 
 src/core/goalStorage.obj: src/core/goalStorage.cpp.obj
@@ -212,7 +212,7 @@ src/core/goalStorage.obj: src/core/goalStorage.cpp.obj
 
 # target to build an object file
 src/core/goalStorage.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/core/goalStorage.cpp.obj
 .PHONY : src/core/goalStorage.cpp.obj
 
 src/core/goalStorage.i: src/core/goalStorage.cpp.i
@@ -220,7 +220,7 @@ src/core/goalStorage.i: src/core/goalStorage.cpp.i
 
 # target to preprocess a source file
 src/core/goalStorage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/core/goalStorage.cpp.i
 .PHONY : src/core/goalStorage.cpp.i
 
 src/core/goalStorage.s: src/core/goalStorage.cpp.s
@@ -228,7 +228,7 @@ src/core/goalStorage.s: src/core/goalStorage.cpp.s
 
 # target to generate assembly for a file
 src/core/goalStorage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/goalStorage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/core/goalStorage.cpp.s
 .PHONY : src/core/goalStorage.cpp.s
 
 src/core/main.obj: src/core/main.cpp.obj
@@ -236,7 +236,7 @@ src/core/main.obj: src/core/main.cpp.obj
 
 # target to build an object file
 src/core/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/core/main.cpp.obj
 .PHONY : src/core/main.cpp.obj
 
 src/core/main.i: src/core/main.cpp.i
@@ -244,7 +244,7 @@ src/core/main.i: src/core/main.cpp.i
 
 # target to preprocess a source file
 src/core/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/core/main.cpp.i
 .PHONY : src/core/main.cpp.i
 
 src/core/main.s: src/core/main.cpp.s
@@ -252,7 +252,7 @@ src/core/main.s: src/core/main.cpp.s
 
 # target to generate assembly for a file
 src/core/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/core/main.cpp.s
 .PHONY : src/core/main.cpp.s
 
 src/core/progStorage.obj: src/core/progStorage.cpp.obj
@@ -260,7 +260,7 @@ src/core/progStorage.obj: src/core/progStorage.cpp.obj
 
 # target to build an object file
 src/core/progStorage.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/core/progStorage.cpp.obj
 .PHONY : src/core/progStorage.cpp.obj
 
 src/core/progStorage.i: src/core/progStorage.cpp.i
@@ -268,7 +268,7 @@ src/core/progStorage.i: src/core/progStorage.cpp.i
 
 # target to preprocess a source file
 src/core/progStorage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/core/progStorage.cpp.i
 .PHONY : src/core/progStorage.cpp.i
 
 src/core/progStorage.s: src/core/progStorage.cpp.s
@@ -276,7 +276,7 @@ src/core/progStorage.s: src/core/progStorage.cpp.s
 
 # target to generate assembly for a file
 src/core/progStorage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GoalTracker.dir\build.make CMakeFiles/GoalTracker.dir/src/core/progStorage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Osmium.dir\build.make CMakeFiles/Osmium.dir/src/core/progStorage.cpp.s
 .PHONY : src/core/progStorage.cpp.s
 
 # Help Target
@@ -288,7 +288,7 @@ help:
 	@echo ... codegen
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... GoalTracker
+	@echo ... Osmium
 	@echo ... src/app/cli.obj
 	@echo ... src/app/cli.i
 	@echo ... src/app/cli.s
