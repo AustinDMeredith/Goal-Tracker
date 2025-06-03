@@ -14,8 +14,8 @@ using namespace std;
 void save(const GoalStorage& goalStorage, const ProgStorage& progStorage)
 {
     // opens the save files
-    ofstream foutGoal("../src/log/goalData/goalData.txt");
-    ofstream foutLog("../src/log/logData/logData.txt");
+    ofstream foutGoal("../log/goalData/goalData.txt");
+    ofstream foutLog("../log/logData/logData.txt");
     
     // checks if files opened properly
     if(!foutGoal || !foutLog) { 
@@ -81,8 +81,8 @@ void printVersion() {
 // gathers save data and prints welcome note
 void startUp(GoalStorage& goalStorage, ProgStorage& progStorage) {
     // opens save files
-    ifstream finGoal("../src/log/goalData/goalData.txt");
-    ifstream finLog("../src/log/logData/logData.txt");
+    ifstream finGoal("../log/goalData/goalData.txt");
+    ifstream finLog("../log/logData/logData.txt");
 
     // pre-startup check to see if files opened properly
     if(!finGoal || !finLog) {
