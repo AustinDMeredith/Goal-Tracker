@@ -11,7 +11,7 @@ void startUp(GoalStorage& goalStorage, ProgStorage& progStorage);
 bool shutDown(GoalStorage& goalStorage, ProgStorage& progStorage, bool isRunning);
 void goalSearch(GoalStorage& goalStorage);
 void createGoal(GoalStorage& goalStorage);
-void logProgress(ProgStorage& progStorage);
+void logProgress(ProgStorage& progStorage, GoalStorage& goalStorage);
 int parse(std::string input);
 
 // function to handle the command line arguments

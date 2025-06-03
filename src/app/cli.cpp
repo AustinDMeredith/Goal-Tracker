@@ -55,7 +55,6 @@ void printMenu(const GoalStorage& goalStorage) {
         cout << pair.second.getName() << endl;
     }
 
-    cout << endl << "To view a goal type View Goal.";
     return;
 }
 
@@ -64,8 +63,9 @@ void printHelp() {
     cout << "Here is a list of all the functions." << endl
     << "Help - Prints all the functions." << endl
     << "Home - Takes user to the Home page." << endl
-    << "New Goal - Takes user to the New Goal page." << endl
-    << "Log Progress - Takes user to the Log Progress page." << endl
+    << "New Goal - Allows user to the create a New Goal." << endl
+    << "Log Progress - Allows users to Log Progress." << endl
+    << "View Goal Details - Allows the user to view goal details." << endl
     << "Save - Saves any changes made by the user." << endl
     << "Quit - Quits the program and saves changes." << endl;
     return;
@@ -130,7 +130,7 @@ void startUp(GoalStorage& goalStorage, ProgStorage& progStorage) {
     }
 
     // clears screen, prints welcome note
-    //system("cls");
+    system("cls");
     cout << "Welcome To Osmium" << endl;
     printVersion();
     cout << "Type Help to view list of commands" << endl << endl;
@@ -207,38 +207,51 @@ void createGoal(GoalStorage& goalStorage) {
     cout << "Goal has been successfully created" << endl;
 }
 
-void logProgress(ProgStorage& progStorage) {
+void logProgress(ProgStorage& progStorage, GoalStorage& goalStorage) {
     string logDate, logName, progressMadeStr;
     double progressMade;
+    string mapId;
     
     cout << "Log Progress!" << endl
     << "Please follow the instructions to log your progress." << endl;
-    cout << "Date (YYYY-DD-MM) >";
-    getline(cin, logDate);
-    cout << "What all did you work on? >";
-    getline(cin, logName);
-    while(true){
-        cout << "How much progress did you make? (Enter a number)>";
-        getline(cin, progressMadeStr);
 
-        if (progressMadeStr.empty()) {
-        cout << "Input cannot be empty." << endl;
-        continue;
-        } try {
-            progressMade = std::stod(progressMadeStr);
-            break;
-        } catch (const invalid_argument&) {
-            cout << "Invalid input: not a number." << endl;
-        } catch (const out_of_range&) {
-            cout << "Input is out of range for a double." << endl;
-        }
-    }
-
-    ProgressLog log(logDate, logName, progressMade);
-    progStorage.addLog(logName, log);
+    printMenu(goalStorage);
+    cout << "Enter the number of the goal you want to log progress for >";
+    getline(cin, mapId);
 
     system("cls");
-    cout << "Progress has been successfully logged";
+    Goal* goal = goalStorage.findGoal(mapId);
+    if(goal) {
+        goal->displayGoal();
+
+        cout << "Date (YYYY-DD-MM) >";
+        getline(cin, logDate);
+        cout << "What all did you work on? >";
+        getline(cin, logName);
+        while(true){
+            cout << "How much progress did you make? (Enter a number)>";
+            getline(cin, progressMadeStr);
+
+            if (progressMadeStr.empty()) {
+                cout << "Input cannot be empty." << endl;
+                continue;
+            } try {
+                progressMade = std::stod(progressMadeStr);
+                break;
+            } catch (const invalid_argument&) {
+                cout << "Invalid input: not a number." << endl;
+            } catch (const out_of_range&) {
+                cout << "Input is out of range for a double." << endl;
+            }
+        }
+        ProgressLog log(logDate, logName, progressMade);
+        progStorage.addLog(logName, log);
+
+        goal->addProgress(log.getProgressMade());
+    } else {
+        cout << "Goal not found." << endl;
+    }
+    system("cls");
 }
 
 bool shutDown(GoalStorage& goalStorage, ProgStorage& progStorage, bool isRunning) {
@@ -261,7 +274,7 @@ int parse(string input) {
         return 5;
     } else if(input == "QUIT") {
         return 6;
-    } else if(input == "VIEWGOAL") {
+    } else if(input == "VIEWGOALDETAILS") {
         return 7;
     }
 }

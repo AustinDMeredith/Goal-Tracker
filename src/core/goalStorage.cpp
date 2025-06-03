@@ -6,7 +6,6 @@ using namespace std;
 // Add a goal to the storage
 void GoalStorage::addGoal(const std::string& id, const Goal& goal) {
     goals.emplace(id, goal);
-    cout << "goal added to storage" << endl;
 } 
 
 // Update a goal in the storage

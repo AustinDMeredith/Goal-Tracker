@@ -1,2 +1,4 @@
-Finish Goal Tracker project|finish Goal Tracker project|School|100|0|2025-6-01
-Start a custom PC and software consultation company|Start a company|Career|10000|0|2027-01-01
+1|1. Finish Goal Tracker project|School|100|90|2025-6-01
+2|2. Make a GUI for this program!|Career|100|0|2025-08-06
+3|3. Start a custom PC and software consultation company|Career|10000|0|2027-01-01
+4|4. Test|test|65|5|test
