@@ -68,6 +68,7 @@ void printHelp() {
     << "New Goal - Allows user to the create a New Goal." << endl
     << "Log Progress - Allows users to Log Progress." << endl
     << "View Goal Details - Allows the user to view goal details." << endl
+    << "Delete Goal - Allows user to delete a goal." << endl
     << "Save - Saves any changes made by the user." << endl
     << "Quit - Quits the program and saves changes." << endl;
     return;
@@ -75,7 +76,7 @@ void printHelp() {
 
 // lists version
 void printVersion() {
-    cout << "Pre-Release Version 0.0.1" << endl;
+    cout << "Pre-Release Version 0.1.0" << endl;
     return;
 }
 
@@ -147,11 +148,26 @@ void startUp(GoalStorage& goalStorage, ProgStorage& progStorage) {
 // finds goal and returns it
 void goalSearch(GoalStorage& goalStorage, ProgStorage& progStorage) {
     string mapIdStr;
+    int mapId;
     printMenu(goalStorage);
-    cout << endl << "Enter the number of the goal you want to view >";
-    getline(cin, mapIdStr);
     
-    int mapId = stoi(mapIdStr);
+    while(true) {
+        cout << endl << "Enter the number of the goal you want to view >";
+        getline(cin, mapIdStr);
+        if (mapIdStr.empty()) {
+        cout << "Input cannot be empty." << endl;
+        continue; 
+        } try {
+            mapId = stoi(mapIdStr);
+            break;
+            // Success: value now holds the converted number
+        } catch (const invalid_argument&) {
+            cout << "Invalid input: not a number." << endl;
+        } catch (const out_of_range&) {
+            cout << "Input is out of range for a double." << endl;
+        }
+    }
+    
     system("cls");
     Goal* goal = goalStorage.findGoal(mapId);
     if(goal) {
@@ -225,15 +241,30 @@ void logProgress(ProgStorage& progStorage, GoalStorage& goalStorage) {
     string logDate, logName, progressMadeStr;
     double progressMade;
     string mapIdStr;
+    int mapId;
     
     cout << "Log Progress!" << endl
     << "Please follow the instructions to log your progress." << endl;
 
     printMenu(goalStorage);
-    cout << "Enter the number of the goal you want to log progress for >";
-    getline(cin, mapIdStr);
-
-    int mapId = std::stoi(mapIdStr);
+    
+    while(true) {
+        cout << "Enter the number of the goal you want to log progress for >";
+        getline(cin, mapIdStr);
+        
+        if (mapIdStr.empty()) {
+        cout << "Input cannot be empty." << endl;
+        continue; 
+        } try {
+            mapId = stoi(mapIdStr);
+            break;
+            // Success: value now holds the converted number
+        } catch (const invalid_argument&) {
+            cout << "Invalid input: not a number." << endl;
+        } catch (const out_of_range&) {
+            cout << "Input is out of range for a double." << endl;
+        }
+    }
 
     system("cls");
     Goal* goal = goalStorage.findGoal(mapId);
@@ -302,14 +333,28 @@ int parse(string input) {
 
 void deleteGoal(GoalStorage& goalStorage, ProgStorage& progStorage) {
     string mapIdStr;
-
+    int mapId;
     cout << "Delete A Goal!" << endl
     << "Please follow the instructions to delete a goal." << endl;
     printMenu(goalStorage);
-    cout << "Enter the number for the goal you want to delete >";
-    getline(cin, mapIdStr);
-
-    int mapId = stoi(mapIdStr);
+    
+    while(true) {
+        cout << "Enter the number for the goal you want to delete >";
+        getline(cin, mapIdStr);
+        
+        if (mapIdStr.empty()) {
+        cout << "Input cannot be empty." << endl;
+        continue; 
+        } try {
+            mapId = stoi(mapIdStr);
+            break;
+            // Success: value now holds the converted number
+        } catch (const invalid_argument&) {
+            cout << "Invalid input: not a number." << endl;
+        } catch (const out_of_range&) {
+            cout << "Input is out of range for a double." << endl;
+        }
+    }
 
     goalStorage.removeGoal(mapId);
     for(auto& pair : progStorage.getLogs()) {

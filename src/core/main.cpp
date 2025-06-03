@@ -45,7 +45,7 @@ int main()
         } else if(option == 8) {
             system("cls");
             deleteGoal(goalStorage, progStorage);
-        }else { // user did not enter an acceptable response
+        } else { // user did not enter an acceptable response
             system("cls");
             cout << "Your input could not be read." << endl;
             printHelp();
