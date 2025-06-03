@@ -4,6 +4,7 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <string>
 using namespace std;
 
 void save(const GoalStorage& goalStorage)
@@ -53,10 +54,11 @@ void printVersion() {
     return;
 }
 
-void startUp() {
-    GoalStorage goalStorage;
+void startUp(GoalStorage& goalStorage) {
     ifstream finGoal("C:/Coding Projects/Goal-Tracker/src/log/goalData/goalData.txt");
     system("cls");
+    printVersion();
+    printMenu();
 
     if(!finGoal) {
         cout << "Failed to read goals from save file" << endl;
@@ -67,20 +69,24 @@ void startUp() {
     string line;
     while(getline(finGoal, line)) {
         istringstream iss(line);
-        string mapId, goalName, category, targetValue, currentValue, deadline;
+        string mapId, goalName, category, targetValueStr, currentValueStr, deadline; // temporary storage for all goal data during startup
         
         getline(iss, mapId, '|');
         getline(iss, goalName, '|');
         getline(iss, category, '|');
-        getline(iss, targetValue, '|'); // this is a string value and needs to be typecast
-        getline(iss, currentValue, '|'); // this is a string value and needs to be typecast
+        getline(iss, targetValueStr, '|'); // this is a string value and needs to be typecast
+        getline(iss, currentValueStr, '|'); // this is a string value and needs to be typecast
         getline(iss, deadline, '|');
 
+        double targetValue = std::stod(targetValueStr);
+        double currentValue = std::stod(currentValueStr);
 
-        
-
-
+        Goal goal(goalName, category, targetValue, currentValue, deadline);
+        goalStorage.addGoal(mapId, goal);
     }
-    printVersion();
-    printMenu();
+}
+
+void goalSearch(GoalStorage& goalStorage) {
+    string mapId = "finish Goal Tracker project";
+    goalStorage.findGoal(mapId)->displayGoal();
 }
