@@ -29,8 +29,8 @@ void ProgStorage::removeLog(const std::string& id) {
 
 }
 
-void ProgStorage::writeToFile() const {
-
+const std::map<std::string, ProgressLog>& ProgStorage::getLogs() const {
+    return progLogs;
 }
 
 ProgressLog* ProgStorage::findLog(const std::string& id) {

@@ -7,6 +7,8 @@ CMakeFiles/Osmium.dir/src/app/cli.cpp.obj: C:/Coding\ Projects/Goal-Tracker/src/
   C:/Coding\ Projects/Goal-Tracker/src/core/goalStorage.h \
   C:/Coding\ Projects/Goal-Tracker/src/core/progStorage.h \
   C:/Coding\ Projects/Goal-Tracker/src/app/cli.h \
+  C:/Coding\ Projects/Goal-Tracker/src/app/goal.h \
+  C:/Coding\ Projects/Goal-Tracker/src/app/progressLog.h \
   c:/mingw/include/_mingw.h \
   c:/mingw/include/ctype.h \
   c:/mingw/include/direct.h \
@@ -26,8 +28,10 @@ CMakeFiles/Osmium.dir/src/app/cli.cpp.obj: C:/Coding\ Projects/Goal-Tracker/src/
   c:/mingw/include/w32api.h \
   c:/mingw/include/wchar.h \
   c:/mingw/include/wctype.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/algorithm \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/array \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/algorithmfwd.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
@@ -63,8 +67,11 @@ CMakeFiles/Osmium.dir/src/app/cli.cpp.obj: C:/Coding\ Projects/Goal-Tracker/src/
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/sstream.tcc \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algo.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_heap.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
@@ -72,10 +79,12 @@ CMakeFiles/Osmium.dir/src/app/cli.cpp.obj: C:/Coding\ Projects/Goal-Tracker/src/
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_multimap.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tempbuf.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tree.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf.tcc \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf_iterator.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/uniform_int_dist.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cctype \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cerrno \
@@ -101,6 +110,7 @@ CMakeFiles/Osmium.dir/src/app/cli.cpp.obj: C:/Coding\ Projects/Goal-Tracker/src/
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/iostream \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/istream \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/limits \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/map \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/basic_file.h \
@@ -471,6 +481,7 @@ CMakeFiles/Osmium.dir/src/core/main.cpp.obj: C:/Coding\ Projects/Goal-Tracker/sr
   C:/Coding\ Projects/Goal-Tracker/src/app/goal.h \
   C:/Coding\ Projects/Goal-Tracker/src/app/progressLog.h \
   C:/Coding\ Projects/Goal-Tracker/src/core/goalStorage.h \
+  C:/Coding\ Projects/Goal-Tracker/src/core/progStorage.h \
   C:/Coding\ Projects/Goal-Tracker/src/core/goalStorage.h \
   C:/Coding\ Projects/Goal-Tracker/src/core/progStorage.h \
   c:/mingw/include/_mingw.h \
@@ -728,6 +739,10 @@ C:/Coding\ Projects/Goal-Tracker/src/app/cli.cpp:
 
 C:/Coding\ Projects/Goal-Tracker/src/app/goal.h:
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/algorithm:
+
 c:/mingw/include/_mingw.h:
 
 C:/Coding\ Projects/Goal-Tracker/src/core/goalStorage.h:
@@ -800,6 +815,10 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h:
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/algorithmfwd.h:
+
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_classes.tcc:
@@ -830,13 +849,9 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h:
-
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/fstream.tcc:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h:
 
@@ -852,11 +867,19 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/postypes.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/sstream.tcc:
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algo.h:
+
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h:
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h:
+
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_heap.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h:
 
@@ -870,6 +893,8 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h:
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tempbuf.h:
+
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tree.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf.tcc:
@@ -878,7 +903,7 @@ C:/Coding\ Projects/Goal-Tracker/src/app/goal.cpp:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf_iterator.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h:
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/uniform_int_dist.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h:
 
@@ -927,6 +952,8 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/iosfwd:
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/iostream:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/istream:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/limits:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h:
 

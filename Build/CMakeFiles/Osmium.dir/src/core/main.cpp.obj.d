@@ -95,6 +95,7 @@ CMakeFiles/Osmium.dir/src/core/main.cpp.obj: \
  C:\Coding\ Projects\Goal-Tracker\src\core\progStorage.h \
  C:/CODING~1/GOAL-T~1/src/app/cli.h \
  C:/CODING~1/GOAL-T~1/src/core/goalStorage.h \
+ C:/CODING~1/GOAL-T~1/src/core/progStorage.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios \

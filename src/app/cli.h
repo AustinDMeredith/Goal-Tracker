@@ -1,14 +1,19 @@
 #ifndef CLI_H
 #define CLI_H
 #include "goalStorage.h"
+#include "progStorage.h"
 
-void save(const GoalStorage& goalStorage);
-void printMenu();
+void save(const GoalStorage& goalStorage, const ProgStorage& progStorage);
+void printMenu(const GoalStorage& goalStorage);
 void printHelp();
 void printVersion();
-void startUp(GoalStorage& goalStorage);
-void shutDown();
+void startUp(GoalStorage& goalStorage, ProgStorage& progStorage);
+bool shutDown(GoalStorage& goalStorage, ProgStorage& progStorage, bool isRunning);
 void goalSearch(GoalStorage& goalStorage);
+void createGoal(GoalStorage& goalStorage);
+void logProgress(ProgStorage& progStorage);
+int parse(std::string input);
+
 // function to handle the command line arguments
 // function to handle creating a goal
 // function to handle deleting a goal

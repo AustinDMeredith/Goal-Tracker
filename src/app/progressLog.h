@@ -4,8 +4,6 @@
 
 class ProgressLog {
 private:
-    int id;
-    int goalId;
     std::string date;
     std::string logName;
     double progressMade;
@@ -13,8 +11,8 @@ private:
 public:
     ProgressLog(std::string date, std::string logName, double progressMade);
 
-    std::string getLogName() const;
     std::string getDate() const;
+    std::string getLogName() const;
     double getProgressMade() const;
 
     void displayProgress() const;

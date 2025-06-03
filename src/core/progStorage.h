@@ -12,7 +12,7 @@ public:
     void addLog(const std::string& id, const ProgressLog& progLog);
     void updateLog(const std::string& id, const ProgressLog& updatedLog);
     void removeLog(const std::string& id);
-    void writeToFile() const;
+    const std::map<std::string, ProgressLog>& getLogs() const;
 
     ProgressLog* findLog(const std::string& id);
 
