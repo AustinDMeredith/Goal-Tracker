@@ -52,6 +52,7 @@ void save(const GoalStorage& goalStorage, const ProgStorage& progStorage)
 void printMenu(const GoalStorage& goalStorage) {
     cout << "Home     - Your Goals -" << endl << "-----------------------" << endl;
     
+    // loop to print the goal ids and names
     for(const auto& pair : goalStorage.getGoals()) {
         cout << pair.first << ". " << pair.second.getName() << endl;
     }
@@ -98,17 +99,19 @@ void startUp(GoalStorage& goalStorage, ProgStorage& progStorage) {
         istringstream iss(line);
         string idStr, goalName, category, targetValueStr, currentValueStr, deadline; // temporary storage for all goal data during startup
         
-        getline(iss, idStr, '|');
+        getline(iss, idStr, '|'); // string value, needs to be typecase before construction
         getline(iss, goalName, '|');
         getline(iss, category, '|');
         getline(iss, targetValueStr, '|'); // string value, needs to be typecase before construction
         getline(iss, currentValueStr, '|'); // string value, needs to be typecase before construction
         getline(iss, deadline, '|');
         
+        // typecasting variables 
         double targetValue = std::stod(targetValueStr);
         double currentValue = std::stod(currentValueStr);
         int id = std::stoi(idStr);
 
+        // constructing goal and adding it to storage
         Goal goal(id, goalName, category, targetValue, currentValue, deadline);
         goalStorage.addGoal(id, goal);
     }
@@ -142,17 +145,21 @@ void startUp(GoalStorage& goalStorage, ProgStorage& progStorage) {
 }
 
 // finds goal and returns it
-void goalSearch(GoalStorage& goalStorage) {
+void goalSearch(GoalStorage& goalStorage, ProgStorage& progStorage) {
     string mapIdStr;
     printMenu(goalStorage);
     cout << endl << "Enter the number of the goal you want to view >";
     getline(cin, mapIdStr);
-
+    
     int mapId = stoi(mapIdStr);
     system("cls");
     Goal* goal = goalStorage.findGoal(mapId);
     if(goal) {
         goal->displayGoal();
+
+        for(const auto& pair : progStorage.getLogs()) {
+            if(pair.second.getGoalId() == mapId) pair.second.displayProgress();
+        }
     } else {
         cout << "Goal not found." << endl;
     }
@@ -288,5 +295,28 @@ int parse(string input) {
         return 6;
     } else if(input == "VIEWGOALDETAILS") {
         return 7;
+    } else if(input == "DELETEGOAL") {
+        return 8;
     }
+}
+
+void deleteGoal(GoalStorage& goalStorage, ProgStorage& progStorage) {
+    string mapIdStr;
+
+    cout << "Delete A Goal!" << endl
+    << "Please follow the instructions to delete a goal." << endl;
+    printMenu(goalStorage);
+    cout << "Enter the number for the goal you want to delete >";
+    getline(cin, mapIdStr);
+
+    int mapId = stoi(mapIdStr);
+
+    goalStorage.removeGoal(mapId);
+    for(auto& pair : progStorage.getLogs()) {
+        if(pair.second.getGoalId() == mapId) {
+            int temp = pair.second.getId();
+            progStorage.removeLog(temp);
+        }
+    }
+    cout << "Goal has been successfully deleted." << endl;
 }

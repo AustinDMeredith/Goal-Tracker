@@ -41,8 +41,11 @@ int main()
             isRunning = shutDown(goalStorage, progStorage, isRunning); 
         } else if(option == 7) { // opens a goal from the home page
             system("cls");
-            goalSearch(goalStorage);
-        } else { // user did not enter an acceptable response
+            goalSearch(goalStorage, progStorage);
+        } else if(option == 8) {
+            system("cls");
+            deleteGoal(goalStorage, progStorage);
+        }else { // user did not enter an acceptable response
             system("cls");
             cout << "Your input could not be read." << endl;
             printHelp();

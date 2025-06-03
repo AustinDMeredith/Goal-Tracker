@@ -1,2 +1,1 @@
-1|Make a fully functional CLI for this project|Personal|100|50|2025-09-06
-
+1|Make a fully functional CLI for this project|Personal|100|60|2025-09-06

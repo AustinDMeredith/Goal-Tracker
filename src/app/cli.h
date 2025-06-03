@@ -9,10 +9,11 @@ void printHelp();
 void printVersion();
 void startUp(GoalStorage& goalStorage, ProgStorage& progStorage);
 bool shutDown(GoalStorage& goalStorage, ProgStorage& progStorage, bool isRunning);
-void goalSearch(GoalStorage& goalStorage);
+void goalSearch(GoalStorage& goalStorage, ProgStorage& progStorage);
 void createGoal(GoalStorage& goalStorage);
 void logProgress(ProgStorage& progStorage, GoalStorage& goalStorage);
 int parse(std::string input);
+void deleteGoal(GoalStorage& goalStorage, ProgStorage& progStorage);
 
 // function to handle the command line arguments
 // function to handle creating a goal

@@ -44,6 +44,7 @@
     },
     "cmake.sourceDirectory": "C:/Coding Projects/Goal-Tracker",
     "cSpell.words": [
+        "DELETEGOAL",
         "NEWGOAL",
         "VIEWGOAL",
         "VIEWGOALDETAILS"
