@@ -2,7 +2,15 @@
 #include <iostream>
 using namespace std;
 
-ProgressLog::ProgressLog(string date, string logName, double progressMade) : date(date), logName(logName), progressMade(progressMade) {}
+ProgressLog::ProgressLog(int id, int goalId, string date, string logName, double progressMade) : id(id), goalId(goalId), date(date), logName(logName), progressMade(progressMade) {}
+
+int ProgressLog::getId() const {
+	return id;
+}
+
+int ProgressLog::getGoalId() const {
+	return goalId;
+}
 
 string ProgressLog::getDate() const {
 	return date;

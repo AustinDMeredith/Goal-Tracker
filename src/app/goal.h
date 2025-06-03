@@ -4,6 +4,7 @@
 
 class Goal {
 private:
+	int id;
 	std::string name;
 	std::string category;
 	double targetValue;
@@ -11,8 +12,9 @@ private:
 	std::string deadline;
 
 public:
-	Goal(std::string name, std::string category, double targetValue, double currentProgress, std::string deadline);
+	Goal(int id, std::string name, std::string category, double targetValue, double currentProgress, std::string deadline);
 
+	int getId() const;
 	std::string getName() const;
 	std::string getCategory() const;
 	double getTargetValue() const;

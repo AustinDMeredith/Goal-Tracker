@@ -6,15 +6,16 @@
 
 class GoalStorage {
 private:
-    std::map<std::string, Goal> goals; // Map to store goals with their IDs as keys
+    std::map<int, Goal> goals; // Map to store goals with their IDs as keys
 
 public:
-    void addGoal(const std::string& id, const Goal& goal); // Add a goal to the storage
-    void updateGoal(const std::string& id, const Goal& updatedGoal); // Update a goal in the storage
-    void removeGoal(const std::string& id); // Remove a goal from the storage
-    const std::map<std::string, Goal>& getGoals() const;
+    int getNextId() const;
+    void addGoal(const int& id, const Goal& goal); // Add a goal to the storage
+    void updateGoal(const int& id, const Goal& updatedGoal); // Update a goal in the storage
+    void removeGoal(const int& id); // Remove a goal from the storage
+    const std::map<int, Goal>& getGoals() const;
 
-    Goal* findGoal(const std::string& id); // Find a goal by its ID
+    Goal* findGoal(const int& id); // Find a goal by its ID
 };
 
 #endif

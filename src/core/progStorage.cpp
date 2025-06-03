@@ -3,12 +3,18 @@
 #include <fstream>
 using namespace std;
 
-void ProgStorage::addLog(const std::string& id, const ProgressLog& progLog) {
+int ProgStorage::getNextId() const {
+    if (progLogs.empty()) return 1;
+    int highestId = progLogs.rbegin()->first;
+    return highestId + 1;
+}
+
+void ProgStorage::addLog(const int& id, const ProgressLog& progLog) {
     progLogs.emplace(id, progLog);
     cout << "Progress log successfully added." << endl;
 }
 
-void ProgStorage::updateLog(const std::string& id, const ProgressLog& updatedLog) {
+void ProgStorage::updateLog(const int& id, const ProgressLog& updatedLog) {
     auto result = progLogs.find(id);
     if(result != progLogs.end()) {
         result->second = updatedLog;
@@ -18,7 +24,7 @@ void ProgStorage::updateLog(const std::string& id, const ProgressLog& updatedLog
     }
 }
 
-void ProgStorage::removeLog(const std::string& id) {
+void ProgStorage::removeLog(const int& id) {
     auto result = progLogs.find(id);
     if(result != progLogs.end()) {
         progLogs.erase(result);
@@ -29,11 +35,11 @@ void ProgStorage::removeLog(const std::string& id) {
 
 }
 
-const std::map<std::string, ProgressLog>& ProgStorage::getLogs() const {
+const std::map<int, ProgressLog>& ProgStorage::getLogs() const {
     return progLogs;
 }
 
-ProgressLog* ProgStorage::findLog(const std::string& id) {
+ProgressLog* ProgStorage::findLog(const int& id) {
     auto result = progLogs.find(id);
     if(result != progLogs.end()) {
         return &result->second;

@@ -6,15 +6,17 @@
 
 class ProgStorage {
 private:
-    std::map<std::string, ProgressLog> progLogs;
+    std::map<int, ProgressLog> progLogs;
 
 public:
-    void addLog(const std::string& id, const ProgressLog& progLog);
-    void updateLog(const std::string& id, const ProgressLog& updatedLog);
-    void removeLog(const std::string& id);
-    const std::map<std::string, ProgressLog>& getLogs() const;
+    int getNextId() const;
+    void addLog(const int& id, const ProgressLog& progLog);
+    void updateLog(const int& id, const ProgressLog& updatedLog);
+    void removeLog(const int& id);
+    const std::map<int, ProgressLog>& getLogs() const;
+    
 
-    ProgressLog* findLog(const std::string& id);
+    ProgressLog* findLog(const int& id);
 
 };
 

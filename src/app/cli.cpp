@@ -26,7 +26,7 @@ void save(const GoalStorage& goalStorage, const ProgStorage& progStorage)
     // writes goal data to save file
     for(const auto& pair : goalStorage.getGoals()) { 
         foutGoal 
-        << pair.first << '|'
+        << pair.second.getId() << '|'
         << pair.second.getName() << '|'
         << pair.second.getCategory() << '|'
         << pair.second.getTargetValue() << '|'
@@ -37,7 +37,8 @@ void save(const GoalStorage& goalStorage, const ProgStorage& progStorage)
     // writes log data to save file
     for(const auto& pair : progStorage.getLogs()) {
         foutLog
-        << pair.first << '|'
+        << pair.second.getId() << '|'
+        << pair.second.getGoalId() << '|'
         << pair.second.getDate() << '|'
         << pair.second.getLogName() << '|'
         << pair.second.getProgressMade() << '\n';
@@ -52,7 +53,7 @@ void printMenu(const GoalStorage& goalStorage) {
     cout << "Home     - Your Goals -" << endl << "-----------------------" << endl;
     
     for(const auto& pair : goalStorage.getGoals()) {
-        cout << pair.second.getName() << endl;
+        cout << pair.first << ". " << pair.second.getName() << endl;
     }
 
     return;
@@ -95,9 +96,9 @@ void startUp(GoalStorage& goalStorage, ProgStorage& progStorage) {
         if (line.empty()) continue;
 
         istringstream iss(line);
-        string mapId, goalName, category, targetValueStr, currentValueStr, deadline; // temporary storage for all goal data during startup
+        string idStr, goalName, category, targetValueStr, currentValueStr, deadline; // temporary storage for all goal data during startup
         
-        getline(iss, mapId, '|');
+        getline(iss, idStr, '|');
         getline(iss, goalName, '|');
         getline(iss, category, '|');
         getline(iss, targetValueStr, '|'); // string value, needs to be typecase before construction
@@ -106,9 +107,10 @@ void startUp(GoalStorage& goalStorage, ProgStorage& progStorage) {
         
         double targetValue = std::stod(targetValueStr);
         double currentValue = std::stod(currentValueStr);
+        int id = std::stoi(idStr);
 
-        Goal goal(goalName, category, targetValue, currentValue, deadline);
-        goalStorage.addGoal(mapId, goal);
+        Goal goal(id, goalName, category, targetValue, currentValue, deadline);
+        goalStorage.addGoal(id, goal);
     }
     
     // reads logs from save file
@@ -116,17 +118,20 @@ void startUp(GoalStorage& goalStorage, ProgStorage& progStorage) {
         if (line.empty()) continue;
 
         istringstream iss(line);
-        string mapId, logDate, logName, logProgressStr; // temporary storage for all log data during startup
+        string mapId, idStr, goalIdStr, logDate, logName, logProgressStr; // temporary storage for all log data during startup
         
-        getline(iss, mapId, '|');
+        getline(iss, idStr, '|');
+        getline(iss, goalIdStr, '|');
         getline(iss, logDate, '|');
         getline(iss, logName, '|');
         getline(iss, logProgressStr, '|'); // string value, needs to be typecase before construction
         
         double logProgress = std::stod(logProgressStr);
+        int id = std::stoi(idStr);
+        int goalId = std::stoi(goalIdStr);
         
-        ProgressLog log(logDate, logName, logProgress);
-        progStorage.addLog(mapId, log);
+        ProgressLog log(id, goalId, logDate, logName, logProgress);
+        progStorage.addLog(id, log);
     }
 
     // clears screen, prints welcome note
@@ -138,11 +143,12 @@ void startUp(GoalStorage& goalStorage, ProgStorage& progStorage) {
 
 // finds goal and returns it
 void goalSearch(GoalStorage& goalStorage) {
-    string mapId;
+    string mapIdStr;
     printMenu(goalStorage);
     cout << endl << "Enter the number of the goal you want to view >";
-    getline(cin, mapId);
+    getline(cin, mapIdStr);
 
+    int mapId = stoi(mapIdStr);
     system("cls");
     Goal* goal = goalStorage.findGoal(mapId);
     if(goal) {
@@ -200,8 +206,9 @@ void createGoal(GoalStorage& goalStorage) {
         }
     }
 
-    Goal goal(goalName, category, targetValue, currentValue, deadline);
-    goalStorage.addGoal(goalName, goal);
+    int id = goalStorage.getNextId();
+    Goal goal(id, goalName, category, targetValue, currentValue, deadline);
+    goalStorage.addGoal(id, goal);
 
     system("cls");
     cout << "Goal has been successfully created" << endl;
@@ -210,14 +217,16 @@ void createGoal(GoalStorage& goalStorage) {
 void logProgress(ProgStorage& progStorage, GoalStorage& goalStorage) {
     string logDate, logName, progressMadeStr;
     double progressMade;
-    string mapId;
+    string mapIdStr;
     
     cout << "Log Progress!" << endl
     << "Please follow the instructions to log your progress." << endl;
 
     printMenu(goalStorage);
     cout << "Enter the number of the goal you want to log progress for >";
-    getline(cin, mapId);
+    getline(cin, mapIdStr);
+
+    int mapId = std::stoi(mapIdStr);
 
     system("cls");
     Goal* goal = goalStorage.findGoal(mapId);
@@ -244,8 +253,11 @@ void logProgress(ProgStorage& progStorage, GoalStorage& goalStorage) {
                 cout << "Input is out of range for a double." << endl;
             }
         }
-        ProgressLog log(logDate, logName, progressMade);
-        progStorage.addLog(logName, log);
+
+        int id = progStorage.getNextId();
+        int goalId = goal->getId();
+        ProgressLog log(id, goalId, logDate, logName, progressMade);
+        progStorage.addLog(id, log);
 
         goal->addProgress(log.getProgressMade());
     } else {

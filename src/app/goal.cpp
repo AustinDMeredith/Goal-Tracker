@@ -2,7 +2,11 @@
 #include <iostream>
 using namespace std;
 
-Goal::Goal(string name, string category, double targetValue, double currentProgress, string deadline) : name(name), category(category), targetValue(targetValue), currentProgress(currentProgress), deadline(deadline) {}
+Goal::Goal(int id, string name, string category, double targetValue, double currentProgress, string deadline) : id(id), name(name), category(category), targetValue(targetValue), currentProgress(currentProgress), deadline(deadline) {}
+
+int Goal::getId() const {
+    return id;
+}
 
 string Goal::getName() const {
     return name;
