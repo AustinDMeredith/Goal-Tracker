@@ -140,7 +140,7 @@ void startUp(GoalStorage& goalStorage, ProgStorage& progStorage) {
 void goalSearch(GoalStorage& goalStorage) {
     string mapId;
     printMenu(goalStorage);
-    cout << "(Enter name exactly as you see it) >";
+    cout << endl << "Enter the number of the goal you want to view >";
     getline(cin, mapId);
 
     system("cls");

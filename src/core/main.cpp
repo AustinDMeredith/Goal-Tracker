@@ -40,6 +40,7 @@ int main()
         } else if(option == 6) { // runs shutdown procedure
             isRunning = shutDown(goalStorage, progStorage, isRunning); 
         } else if(option == 7) { // opens a goal from the home page
+            system("cls");
             goalSearch(goalStorage);
         } else { // user did not enter an acceptable response
             system("cls");
